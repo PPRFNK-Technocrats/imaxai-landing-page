@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Комплексный обзор AI-сервисов и инструментов</title>
+    <style>
+        :root {
+            --primary-color: #0077be;
+            --secondary-color: #4db8ff;
+            --bg-color: #121212;
+            --bg-secondary: #1e1e1e;
+            --text-color: #e0e0e0;
+        }
+        
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+        }
+        
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+            overflow: hidden;
+            padding: 20px;
+        }
+        
+        header {
+            background: var(--bg-secondary);
+            color: #ffffff;
+            padding: 30px 0;
+            border-bottom: var(--primary-color) 3px solid;
+        }
+        
+        header h1 {
+            margin: 0;
+            text-align: center;
+            font-size: 2.5em;
+        }
+        
+        nav {
+            background: var(--bg-secondary);
+            padding: 10px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        
+        nav ul {
+            list-style: none;
+            text-align: center;
+        }
+        
+        nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+        
+        nav ul li a {
+            color: var(--secondary-color);
+            text-decoration: none;
+            font-weight: bold;
+        }
+        
+        .main-content {
+            padding: 20px 0;
+        }
+        
+        h2 {
+            color: var(--primary-color);
+            margin-top: 30px;
+            margin-bottom: 20px;
+            border-bottom: 2px solid var(--primary-color);
+            padding-bottom: 10px;
+        }
+        
+        h3 {
+            color: var(--secondary-color);
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+        
+        a {
+            color: var(--secondary-color);
+            text-decoration: none;
+        }
+        
+        a:hover {
+            text-decoration: underline;
+        }
+        
+        .service {
+            background: var(--bg-secondary);
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+        
+        .service h3 {
+            margin-top: 0;
+        }
+        
+        footer {
+            background: var(--bg-secondary);
+            color: #ffffff;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
+        }
+        
+        .back-to-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: var(--primary-color);
+            color: #fff;
+            padding: 10px 15px;
+            border-radius: 50%;
+            text-decoration: none;
+            display: none;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                width: 95%;
+            }
+            
+            nav ul li {
+                display: block;
+                margin: 10px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Комплексный обзор AI-сервисов и инструментов</h1>
+        </div>
+    </header>
+
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="#key-service">Ключевой сервис</a></li>
+                <li><a href="#llm-models">LLM Модели</a></li>
+                <li><a href="#image-generation">Генерация изображений</a></li>
+                <li><a href="#video-generation">Генерация видео</a></li>
+                <li><a href="#agent-creation">Создание агентов</a></li>
+                <li><a href="#voice-services">Голосовые сервисы</a></li>
+                <li><a href="#music-generation">Генерация музыки</a></li>
+                <li><a href="#additional-resources">Дополнительные ресурсы</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container main-content">
+        <p>В этой статье мы представляем обширный список AI-сервисов и инструментов, которые могут быть полезны разработчикам, исследователям и энтузиастам искусственного интеллекта. Начнем с нашего ключевого сервиса, а затем рассмотрим другие полезные ресурсы по категориям.</p>
+
+        <h2 id="key-service">Ключевой сервис</h2>
+        <div class="service">
+            <h3>AI OVERLAY</h3>
+            <p><strong>Описание:</strong> Инновационная программа от PPRFNK TECH для открытого ИИ.</p>
+            <p><strong>Ссылка:</strong> <a href="https://docs.google.com/forms/d/e/1FAIpQLScV5mu5_4gQ2WC2BMw0Axvm8ls-uYKSnUooSBGApmGa3TtSbA/viewform" target="_blank">Регистрация на бета-тестирование</a></p>
+            <p><strong>Статус:</strong> В настоящее время идет набор бета-тестеров. Присоединяйтесь к нам, чтобы быть в авангарде развития AI-технологий!</p>
+        </div>
+
+        <h2 id="llm-models">LLM Модели</h2>
+        <div class="service">
+            <h3>Mistral</h3>
+            <p><strong>Описание:</strong> Mistral 7B Instruct — модель с 7,42 миллиардами параметров, обеспечивающая высокую скорость и низкую стоимость за токен.</p>
+            <p><strong>Ссылка:</strong> <a href="https://telnyx.com/llm-library/mistral-7b-instruct-v0-1" target="_blank">Mistral 7B Instruct</a></p>
+            <p><strong>Стоимость:</strong> $0.0003 за 1000 токенов.</p>
+        </div>
+
+        <div class="service">
+            <h3>Groq</h3>
+            <p><strong>Описание:</strong> Groq AI использует передовые технологии для создания естественных и увлекательных разговоров.</p>
+            <p><strong>Ссылка:</strong> <a href="https://groq.com" target="_blank">Groq AI</a></p>
+            <p><strong>Стоимость:</strong> Бесплатно для использования в чате.</p>
+        </div>
+
+        <div class="service">
+            <h3>NVIDIA</h3>
+            <p><strong>Описание:</strong> Платформа NVIDIA для работы с LLM, включая LLAMA 405B.</p>
+            <p><strong>Ссылка:</strong> <a href="https://build.nvidia.com/explore/discover" target="_blank">NVIDIA Build</a></p>
+            <p><strong>Стоимость:</strong> Информация о стоимости не предоставлена.</p>
+        </div>
+
+        <div class="service">
+            <h3>Grok</h3>
+            <p><strong>Описание:</strong> Grok AI предлагает возможности для создания текстов, перевода и обработки информации.</p>
+            <p><strong>Ссылка:</strong> <a href="https://grok-ai.app" target="_blank">Grok AI</a></p>
+            <p><strong>Стоимость:</strong> Доступен для участников программы X Premium+.</p>
+        </div>
+
+        <div class="service">
+            <h3>OpenAI</h3>
+            <p><strong>Описание:</strong> Доступ к бесплатному чату с GPT-4o mini.</p>
+            <p><strong>Ссылка:</strong> <a href="https://help.openai.com/en/articles/7102672-how-can-i-access-gpt-4-gpt-4-turbo-gpt-4o-and-gpt-4o-mini" target="_blank">OpenAI</a></p>
+            <p><strong>Стоимость:</strong> Бесплатно для использования в чате.</p>
+        </div>
+
+        <div class="service">
+            <h3>Claude</h3>
+            <p><strong>Описание:</strong> Claude Sonnet 3.5 — конкурентоспособная модель, предлагающая высокую производительность в тестах на кодирование и обработку текста.</p>
+            <p><strong>Ссылка:</strong> <a href="https://www.swiftask.ai/ai/claude35sonnet" target="_blank">Claude Sonnet 3.5</a></p>
+            <p><strong>Стоимость:</strong> Информация о стоимости не предоставлена.</p>
+        </div>
+
+        <div class="service">
+            <h3>DeepSeek</h3>
+            <p><strong>Описание:</strong> DeepSeek-V2-Chat — модель для текстовых взаимодействий, подходящая для создания чат-ботов.</p>
+            <p><strong>Ссылка:</strong> <a href="https://www.aimodels.fyi/models/huggingFace/deepseek-v2-chat-deepseek-ai" target="_blank">DeepSeek V2 Chat</a></p>
+            <p><strong>Стоимость:</strong> Требуется создание аккаунта для полного доступа.</p>
+        </div>
+
+        <div class="service">
+            <h3>GPT4All</h3>
+            <p><strong>Описание:</strong> Открытый репозиторий с возможностью локального развертывания моделей.</p>
+            <p><strong>Ссылка:</strong> <a href="https://github.com/nomic-ai/gpt4all" target="_blank">GPT4All на GitHub</a></p>
+            <p><strong>Стоимость:</strong> Бесплатно (открытый исходный код).</p>
+        </div>
+
+        <h2 id="image-generation">Генерация изображений</h2>
+        <div class="service">
+            <h3>Flux</h3>
+            <p><strong>Описание:</strong> Модель для генерации изображений с текстом.</p>
+            <p><strong>Ссылка:</strong> <a href="https://huggingface.co/spaces/flux-ai/flux" target="_blank">FLUX на HuggingFace</a></p>
+            <p><strong>Стоимость:</strong> Бесплатно для использования через HuggingFace.</p>
+        </div>
+
+        <div class="service">
+            <h3>SDXL</h3>
+            <p><strong>Описание:</strong> Доступ к бесплатным генераторам изображений SDXL.</p>
+            <p><strong>Ссылка:</strong> <a href="https://cogniwerk.ai" target="_blank">Cogniwerk</a></p>
+            <p><strong>Стоимость:</strong> Бесплатно.</p>
+        </div>
+
+        <div class="service">
+            <h3>AURAFLOW</h3>
+            <p><strong>Описание:</strong> Модель для генерации изображений с точным следованием инструкциям.</p>
+            <p><strong>Ссылка:</strong> <a href="https://huggingface.co/spaces/multimodalart/AuraFlow" target="_blank">AuraFlow на HuggingFace</a></p>
+            <p><strong>Стоимость:</strong> Бесплатно для использования через HuggingFace.</p>
+        </div>
+
+        <div class="service">
+            <h3>Midjourney</h3>
+            <p><strong>Описание:</strong> Сервис, использующий нейросети для создания изображений высокого качества. Отличается уникальными художественными стилями и возможностью генерации изображений по текстовым запросам.</p>
+            <p><strong>Ссылка:</strong> <a href="https://www.midjourney.com/" target="_blank">Midjourney</a></p>
+            <p><strong>Стоимость:</strong> Имеется бесплатная пробная версия; дополнительные функции доступны по подписке.</p>
+        </div>
+
+        <div class="service">
+            <h3>DALL-E</h3>
+            <p><strong>Описание:</strong> Модель от OpenAI для генерации изображений на основе текстовых описаний. Способна создавать уникальные изображения, которые можно использовать в различных творческих проектах.</p>
+            <p><strong>Ссылка:</strong> <a href="https://openai.com/dall-e-2" target="_blank">DALL-E</a></p>
+            <p><strong>Стоимость:</strong> Бесплатный доступ с определенными ограничениями; для расширенного использования доступна подписка.</p>
+        </div>
+
+        <div class="service">
+            <h3>DeepArt.io</h3>
+            <p><strong>Описание:</strong> Онлайн-сервис для преобразования фотографий в художественные изображения с использованием стилей известных художников. Идеально подходит для создания оригинальных и креативных изображений.</p>
+            <p><strong>Ссылка:</strong> <a href="https://deepart.io/" target="_blank">DeepArt.io</a></p>
+            <p><strong>Стоимость:</strong> Доступны как бесплатные, так и платные опции в зависимости от размера и качества изображения.</p>
+        </div>
+
+        <h2 id="video-generation">Генерация видео</h2>
+        <div class="service">
+            <h3>RunwayML</h3>
+            <p><strong>Описание:</strong> Платформа для создания видео с использованием текста и изображений.</p>
+            <p><strong>Ссылка:</strong> <a href="https://runwayml.com/" target="_blank">RunwayML</a></p>
+            <p><strong>Стоимость:</strong> Предлагаются различные планы подписки.</p>
+        </div>
+
+        <div class="service">
+            <h3>KlingAI</h3>
+            <p><strong>Описание:</strong> Сервис для генерации видео с использованием AI.</p>
+            <p><strong>Ссылка:</strong> <a href="https://klling.ai" target="_blank">KlingAI</a></p>
+            <p><strong>Стоимость:</strong> Информация о возможностях и стоимости не указана.</p>
+        </div>
+
+        <h2 id="agent-creation">Создание агентов</h2>
+        <div class="service">
+            <h3>BABYAGI</h3>
+            <p><strong>Описание:</strong> Система управления задачами на основе ИИ.</p>
+            <p><strong>Ссылка:</strong> <a href="https://github.com/yoheinakajima/babyagi" target="_blank">BabyAGI на GitHub</a></p>
+            <p><strong>Стоимость:</strong> Бесплатно (открытый исходный код).</p>
+        </div>
+
+        <div class="service">
+            <h3>RepoAgent</h3>
+            <p><strong>Описание:</strong> LLM-агент для репозиториев, предназначенный для помощи разработчикам и командам в генерации документации и понимании репозиториев.</p>
+            <p><strong>Ссылка:</strong> <a href="https://github.com/OpenBMB/RepoAgent" target="_blank">RepoAgent на GitHub</a></p>
+            <p><strong>Стоимость:</strong> Бесплатно (открытый исходный код).</p>
+        </div>
+
+        <div class="service">
+            <h3>Awesome-AI-Agents</h3>
+            <p><strong>Описание:</strong> Коллекция автономных AI-агентов для разработчиков.</p>
+            <p><strong>Ссылка:</strong> <a href="https://github.com/Jenqyang/Awesome-AI-Agents" target="_blank">Awesome-AI-Agents на GitHub</a></p>
+            <p><strong>Стоимость:</strong> Бесплатно (коллекция ресурсов).</p>
+        </div>
+
+        <div class="service">
+            <h3>Awesome AI-Powered Developer Tools</h3>
+            <p><strong>Описание:</strong> Коллекция инструментов для разработчиков, использующих AI.</p>
+            <p><strong>Ссылка:</strong> <a href="https://github.com/jamesmurdza/awesome-ai-devtools" target="_blank">Awesome AI-Powered Developer Tools на GitHub</a></p>
+            <p><strong>Стоимость:</strong> Бесплатно (коллекция ресурсов).</p>
+        </div>
+
+        <h2>Развертывание репозиториев</h2>
+        <div class="service">
+            <h3>Pinokio</h3>
+            <p><strong>Описание:</strong> Браузер для автоматического управления приложениями.</p>
+            <p><strong>Ссылка:</strong> <a href="https://pinokio.computer" target="_blank">Pinokio</a></p>
+            <p><strong>Стоимость:</strong> Информация о стоимости не предоставлена.</p>
+        </div>
+
+        <h2 id="voice-services">Голос в текст и синтез речи</h2>
+        <div class="service">
+            <h3>ElevenLabs</h3>
+            <p><strong>Описание:</strong> Сервисы для генерации голоса из текста и клонирования голоса.</p>
+            <p><strong>Ссылка:</strong> <a href="https://elevenlabs.io" target="_blank">ElevenLabs</a></p>
+            <p><strong>Возможности:</strong> Генерация голоса из текста, клонирование голоса, создание аудио контента.</p>
+            <p><strong>Стоимость:</strong> Предлагаются различные планы подписки.</p>
+        </div>
+
+        <div class="service">
+            <h3>Speechify</h3>
+            <p><strong>Описание:</strong> Сервис для клонирования голоса в реальном времени.</p>
+            <p><strong>Ссылка:</strong> <a href="https://speechify.com/" target="_blank">Speechify</a></p>
+            <p><strong>Возможности:</strong> Клонирование голоса в реальном времени, создание аудио контента.</p>
+            <p><strong>Стоимость:</strong> Предлагаются различные планы подписки.</p>
+        </div>
+
+        <h3>Очистка голоса</h3>
+        <div class="service">
+            <h3>Krisp</h3>
+            <p><strong>Описание:</strong> Сервис, использующий искусственный интеллект для удаления фонового шума и улучшения качества голоса в реальном времени.</p>
+            <p><strong>Ссылка:</strong> <a href="https://krisp.ai/" target="_blank">Krisp</a></p>
+        </div>
+
+        <div class="service">
+            <h3>Adobe Podcast</h3>
+            <p><strong>Описание:</strong> Инструмент от Adobe для редактирования аудио, включающий функции для очистки голоса и улучшения качества звука.</p>
+            <p><strong>Ссылка:</strong> <a href="https://podcast.adobe.com/" target="_blank">Adobe Podcast</a></p>
+        </div>
+
+        <div class="service">
+            <h3>Beatoven.ai</h3>
+            <p><strong>Описание:</strong> Платформа для создания и редактирования музыки и подкастов с функцией очистки аудио и улучшения качества звука.</p>
+            <p><strong>Ссылка:</strong> <a href="https://www.beatoven.ai/" target="_blank">Beatoven.ai</a></p>
+        </div>
+
+        <div class="service">
+            <h3>Audio Strip</h3>
+            <p><strong>Описание:</strong> Инструмент для удаления вокала или фонового шума из аудиозаписей, позволяющий получить чистый голос.</p>
+            <p><strong>Ссылка:</strong> <a href="https://audiostrip.co.uk/" target="_blank">Audio Strip</a></p>
+        </div>
+
+        <div class="service">
+            <h3>Voicemod</h3>
+            <p><strong>Описание:</strong> Программа для изменения голоса и удаления шума, часто используемая для стриминга и игр.</p>
+            <p><strong>Ссылка:</strong> <a href="https://www.voicemod.net/" target="_blank">Voicemod</a></p>
+        </div>
+
+        <div class="service">
+            <h3>Cleanvoice AI</h3>
+            <p><strong>Описание:</strong> AI-инструмент для автоматического удаления шумов, пауз и других дефектов из подкастов и других аудиозаписей.</p>
+            <p><strong>Ссылка:</strong> <a href="https://cleanvoice.ai/" target="_blank">Cleanvoice AI</a></p>
+        </div>
+
+        <div class="service">
+            <h3>Podcastle</h3>
+            <p><strong>Описание:</strong> Платформа для создания и редактирования подкастов с функцией улучшения качества голоса и удаления фонового шума.</p>
+            <p><strong>Ссылка:</strong> <a href="https://podcastle.ai/" target="_blank">Podcastle</a></p>
+        </div>
+
+        <div class="service">
+            <h3>Altered</h3>
+            <p><strong>Описание:</strong> Инструмент для изменения и улучшения качества голоса, включая функции для удаления шума и улучшения четкости аудио.</p>
+            <p><strong>Ссылка:</strong> <a href="https://www.altered.ai/" target="_blank">Altered</a></p>
+        </div>
+
+        <h2 id="music-generation">Генерация музыки</h2>
+        <div class="service">
+            <h3>Suno</h3>
+            <p><strong>Описание:</strong> Платформа для создания музыки.</p>
+            <p><strong>Ссылка:</strong> <a href="https://www.suno.ai/" target="_blank">Suno</a></p>
+            <p><strong>Возможности:</strong> Создание музыки, генерация треков, удаление шумов.</p>
+            <p><strong>Стоимость:</strong> Предлагается бесплатный тариф с ограниченным функционалом. Платные планы начинаются от $10 в месяц.</p>
+        </div>
+
+        <div class="service">
+            <h3>AIVA</h3>
+            <p><strong>Описание:</strong> AI-композитор для создания оригинальной музыки для различных целей, включая фильмы, игры и рекламу.</p>
+            <p><strong>Ссылка:</strong> <a href="https://www.aiva.ai/" target="_blank">AIVA</a></p>
+            <p><strong>Стоимость:</strong> Бесплатный план с ограничениями, профессиональные планы от $19 в месяц.</p>
+        </div>
+
+        <div class="service">
+            <h3>UDIO</h3>
+            <p><strong>Описание:</strong> Платформа для создания музыки с использованием искусственного интеллекта, предлагающая широкий спектр инструментов для музыкального продакшена.</p>
+            <p><strong>Ссылка:</strong> <a href="https://udio.com/" target="_blank">UDIO</a></p>
+            <p><strong>Стоимость:</strong> Информация о стоимости может варьироваться, рекомендуется проверить актуальные тарифы на официальном сайте.</p>
+        </div>
+
+        <h2 id="additional-resources">Дополнительные ресурсы</h2>
+        <div class="service">
+            <h3>HuggingFace</h3>
+            <p><strong>Описание:</strong> Популярные демо моделей на платформе HuggingFace.</p>
+            <p><strong>Ссылка:</strong> <a href="https://huggingface.co/" target="_blank">HuggingFace</a></p>
+            <p><strong>Возможности:</strong> Доступ к популярным демо моделям, создание и редактирование контента.</p>
+            <p><strong>Стоимость:</strong> Большинство моделей доступны бесплатно. Платные опции для расширенного использования и хостинга моделей начинаются от $9 в месяц.</p>
+        </div>
+
+        <h2>Рекомендации по дальнейшему исследованию</h2>
+        <ol>
+            <li>
+                <strong>Инструменты для разработки:</strong>
+                <ul>
+                    <li>Исследуйте GitHub Copilot и Tabnine для помощи в написании кода.</li>
+                    <li>Ознакомьтесь с AI-powered IDE плагинами для популярных сред разработки.</li>
+                    <li>Используйте GitHub для поиска проектов, связанных с интеграцией нейросетей в веб-разработку. Ищите проекты с ключевыми словами "machine learning frontend", "AI backend", "deep learning web development".</li>
+                </ul>
+            </li>
+            <li>
+                <strong>Генерация изображений и видео:</strong>
+                <ul>
+                    <li>Попробуйте Artbreeder для генерации и смешивания изображений.</li>
+                    <li>Исследуйте Synthesia для создания видео с использованием искусственного интеллекта.</li>
+                    <li>Изучите возможности Runway ML для создания и редактирования видео с помощью AI.</li>
+                </ul>
+            </li>
+            <li>
+                <strong>AI для анализа данных:</strong>
+                <ul>
+                    <li>Ознакомьтесь с AutoML платформами, такими как Google Cloud AutoML и Amazon SageMaker.</li>
+                    <li>Изучите возможности обработки естественного языка с помощью моделей, доступных на HuggingFace.</li>
+                </ul>
+            </li>
+            <li>
+                <strong>Следите за новостями и обновлениями:</strong>
+                <ul>
+                    <li>Подпишитесь на ведущие AI-блоги и издания, такие как AI Trends, Towards Data Science, MIT Technology Review и OpenAI Blog.</li>
+                    <li>Используйте ресурсы, такие как AI Tools Directory, для поиска новых и актуальных инструментов в области AI.</li>
+                    <li>Участвуйте в онлайн-сообществах разработчиков AI на платформах, таких как Reddit r/MachineLearning и Stack Overflow.</li>
+                </ul>
+            </li>
+        </ol>
+
+        <h2>Полезные ресурсы для исследований и разработки</h2>
+        <div class="service">
+            <h3>GitHub</h3>
+            <p><strong>Описание:</strong> Платформа для хостинга кода, совместной разработки и обмена проектами с открытым исходным кодом.</p>
+            <p><strong>Ссылка:</strong> <a href="https://github.com" target="_blank">github.com</a></p>
+        </div>
+
+        <div class="service">
+            <h3>arXiv</h3>
+            <p><strong>Описание:</strong> Репозиторий электронных препринтов научных статей по физике, математике, информатике и другим областям.</p>
+            <p><strong>Ссылка:</strong> <a href="https://arxiv.org" target="_blank">arxiv.org</a></p>
+        </div>
+
+        <div class="service">
+            <h3>Papers With Code</h3>
+            <p><strong>Описание:</strong> Бесплатный ресурс с открытым исходным кодом, объединяющий научные публикации по машинному обучению с их реализациями.</p>
+            <p><strong>Ссылка:</strong> <a href="https://paperswithcode.com" target="_blank">paperswithcode.com</a></p>
+        </div>
+
+        <div class="service">
+            <h3>Google Scholar</h3>
+            <p><strong>Описание:</strong> Бесплатная поисковая система по полным текстам научных публикаций всех форматов и дисциплин.</p>
+            <p><strong>Ссылка:</strong> <a href="https://scholar.google.com" target="_blank">scholar.google.com</a></p>
+        </div>
+
+        <div class="service">
+            <h3>IEEE Xplore</h3>
+            <p><strong>Описание:</strong> Цифровая библиотека, предоставляющая доступ к техническим публикациям в области электротехники, информатики и электроники.</p>
+            <p><strong>Ссылка:</strong> <a href="https://ieeexplore.ieee.org" target="_blank">ieeexplore.ieee.org</a></p>
+        </div>
+
+        <div class="service">
+            <h3>ACM Digital Library</h3>
+            <p><strong>Описание:</strong> Обширная коллекция полнотекстовых статей и библиографических записей в области вычислительной техники и информационных технологий.</p>
+            <p><strong>Ссылка:</strong> <a href="https://dl.acm.org" target="_blank">dl.acm.org</a></p>
+        </div>
+
+        <div class="service">
+            <h3>Kaggle</h3>
+            <p><strong>Описание:</strong> Платформа для соревнований по анализу данных, предоставляющая инструменты и ресурсы для машинного обучения.</p>
+            <p><strong>Ссылка:</strong> <a href="https://www.kaggle.com" target="_blank">kaggle.com</a></p>
+        </div>
+
+        <div class="service">
+            <h3>Awesome Machine Learning</h3>
+            <p><strong>Описание:</strong> Курируемый список потрясающих ресурсов, библиотек и программного обеспечения для машинного обучения.</p>
+            <p><strong>Ссылка:</strong> <a href="https://github.com/josephmisiti/awesome-machine-learning" target="_blank">GitHub репозиторий</a></p>
+        </div>
+
+        <h2>Заключение</h2>
+        <p>Мир искусственного интеллекта и машинного обучения постоянно развивается, предоставляя разработчикам и исследователям все новые инструменты и возможности. От генерации текста и изображений до создания музыки и анализа данных — AI-технологии находят применение в самых разных областях.</p>
+        <p>Мы надеемся, что этот обзор поможет вам сориентироваться в многообразии доступных сервисов и инструментов. Не забывайте регулярно проверять обновления и новые разработки, так как область AI стремительно прогрессирует.</p>
+        <p>Если вы только начинаете свой путь в мире AI или ищете новые инструменты для своих проектов, начните с изучения предоставленных ресурсов и не бойтесь экспериментировать. Помните, что многие сервисы предлагают бесплатные версии или пробные периоды, что позволяет попробовать их возможности без финансовых вложений.</p>
+        <p>Делитесь своим опытом с сообществом, участвуйте в открытых проектах и не переставайте учиться. Искусственный интеллект открывает огромные возможности, и ваш вклад может стать частью этой увлекательной технологической революции.</p>
+        <p>Удачи в ваших AI-проектах!</p>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Комплексный обзор AI-сервисов и инструментов. Все права защищены.</p>
+        </div>
+    </footer>
+
+    <a href="#" class="back-to-top">↑</a>
+
+    <script>
+        // Показать/скрыть кнопку "Наверх" при прокрутке
+        window.onscroll = function() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.querySelector('.back-to-top').style.display = "block";
+            } else {
+                document.querySelector('.back-to-top').style.display = "none";
+            }
+        };
+
+        // Плавная прокрутка наверх при клике на кнопку
+        document.querySelector('.back-to-top').addEventListener('click', function(e) {
+            e.preventDefault();
+            window.scrollTo({top: 0, behavior: 'smooth'});
+        });
+    </script>
+</body>
+</html>
